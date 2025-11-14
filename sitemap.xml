@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://oiianimation.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://oiianimation.com/agents.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://oiianimation.com/scenes.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://oiianimation.com/cases.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://oiianimation.com/tools.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://oiianimation.com/tutorials.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://oiianimation.com/beta.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://oiianimation.com/enterprise.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://oiianimation.com/membership.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://oiianimation.com/community.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://oiianimation.com/contact.html</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+</urlset>
