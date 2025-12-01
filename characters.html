@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 动画角色资产档案 | 多维标签筛选与形象一致性设计</title>
+  <meta name="description" content="专业 AI 动画角色提示词档案馆：按人设、外貌、职业、风格等 7 大维度整理标签，每个角色展示 Prompt / Negative / 参数，快速复制复刻二次元形象。">
+  <meta name="keywords" content="AI 角色设计,角色一致性,多维标签筛选,Prompt 生成,角色资产复用,动画人设,三视图">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data/character-presets.js"></script>
+  <script defer src="scripts.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">OiiOii.ai 动画创作Agent</a>
+                  <nav class="nav" aria-label="主导航">
+        <button class="nav-toggle" aria-controls="nav-list" aria-expanded="false">≡ 导航菜单</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="/">首页</a></li>
+          <li><a href="/cases.html">oiioii视频案例库 <span class="badge">Hot</span></a></li>
+          <li><a href="/styles.html">风格库</a></li>
+          <li><a class="active" href="/characters.html">角色库</a></li>
+          <li><a href="/tutorials.html">教程中心 <span class="badge">New</span></a></li>
+          <li><a href="/blog.html">博客</a></li>
+          <li><a href="/tools.html">工具库</a></li>
+          <li><a href="/contact.html">oiioii官方信息</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="characters-page">
+    <section class="characters-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">角色资产管理 · Prompt 展示</p>
+          <h1>AI 动画角色提示词档案：多维筛选 + Prompt / Negative</h1>
+          <p>整合人设、外貌、职业、风格等 7 大设计维度标签，每个角色附带完整 Prompt / Negative / 参数，可直接复制到你熟悉的 AI 工具，实现角色形象的稳定复用。</p>
+          <div class="hero-tags">
+            <span>设计维度</span>
+            <span>三视图规范</span>
+            <span>角色特征锁定</span>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="characters-filter" id="filters">
+      <div class="container filter-panel">
+        <div>
+          <h2>多维标签筛选与设计维度</h2>
+          <p>基于 AI 动画制作需求，将角色人设拆分为 7 个设计维度，通过标签组合精确锁定所需角色资产，是解决角色一致性的第一步。</p>
+        </div>
+        <div class="filter-grid">
+          <div class="filter-group">
+            <p class="label">性别 × 年龄段</p>
+            <div class="chip-list" data-filter-group="genderAge"></div>
+          </div>
+          <div class="filter-group">
+            <p class="label">性格/情绪特征</p>
+            <div class="chip-list" data-filter-group="personality"></div>
+          </div>
+          <div class="filter-group">
+            <p class="label">外貌关键词</p>
+            <div class="chip-list" data-filter-group="appearance"></div>
+          </div>
+          <div class="filter-group">
+            <p class="label">服装/配饰风格</p>
+            <div class="chip-list" data-filter-group="outfit"></div>
+          </div>
+          <div class="filter-group">
+            <p class="label">身份 / 职业标签</p>
+            <div class="chip-list" data-filter-group="identity"></div>
+          </div>
+          <div class="filter-group">
+            <p class="label">画风流派</p>
+            <div class="chip-list" data-filter-group="style"></div>
+          </div>
+        </div>
+        <div class="filter-actions">
+          <a class="btn btn-primary" href="image-generator.html#character">生成动画角色提示词</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="preset-status container">
+      <div>
+        <p class="eyebrow">角色资产预览</p>
+        <h2>精选角色设计组合与 Prompt 模版</h2>
+        <p>档案库已将角色设计要素全部拆解成标签，自动匹配出经典设计示例。找不到所需原型时，可跳去 AI 工具生成。</p>
+      </div>
+      <div class="status-actions">
+        <div class="search-field">
+          <i class="fa fa-search"></i>
+          <input type="search" id="preset-search" placeholder="搜索角色标题 / 英文关键词">
+        </div>
+        <div class="active-tags" id="active-filters"></div>
+        <div class="status-meta">
+          <p class="note">已匹配 <span id="result-count">0</span> / <span id="total-count">0</span></p>
+          <button type="button" class="chip ghost" id="clear-filters"><i class="fa fa-times"></i> 清空条件</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="preset-gallery container">
+      <div id="preset-grid" class="preset-grid" aria-live="polite">
+        </div>
+      <div id="preset-empty" class="empty-state hidden">
+        <h3>当前筛选条件下无匹配资产</h3>
+        <p>复制任意角色 Prompt，在我们的 <a href="image-generator.html">AI 生成工具</a> 中一键粘贴即可使用。</p>
+        <a class="btn btn-primary" href="image-generator.html">去 AI 生成同款</a>
+      </div>
+    </section>
+
+    <section class="generator-cta container">
+      <div>
+        <p class="eyebrow">Prompt 模版生成指导</p>
+        <h2>精确定义角色特征，提升生成效率</h2>
+        <p>每张卡片都展示 Prompt / Negative / 参数。复制后可直接粘贴到 <a href="image-generator.html">AI 生成工具</a> 或任意模型里使用，也可以结合教程继续扩写。</p>
+      </div>
+      <div class="generator-steps">
+        <article>
+          <h3>01 筛选资产</h3>
+          <p>支持 70+ 标签组合，精准筛选出心仪的角色设计原型。</p>
+        </article>
+        <article>
+          <h3>02 学习设定</h3>
+          <p>参考图库中每个资产的设定与 Prompt 关键词组合。</p>
+        </article>
+        <article>
+          <h3>03 复制提示词生成</h3>
+          <p>点击复制按钮即可带走 Prompt，粘贴到生成器或其它工具，几秒完成同款角色图。</p>
+        </article>
+      </div>
+    </section>
+    
+    <section class="prompt-faq container">
+      <div class="section-header">
+        <p class="eyebrow">角色提示词 FAQ</p>
+        <h2>如何用角色 Prompt 提升 AI 生成质量？</h2>
+        <p class="note">结合常见提问总结的 Prompt 使用策略，同时提供内部链接帮助搜索引擎理解页面主题。</p>
+      </div>
+      <div class="faq-grid">
+        <article>
+          <h3>Prompt / Negative 怎么搭配？</h3>
+          <p>默认展示的 Prompt 与 Negative 已经按角色设定调优，建议先完整复制，再根据场景替换部分服装或表情关键词，保留 Negative 避免多余元素。</p>
+        </article>
+        <article>
+          <h3>适配哪些模型？</h3>
+          <p>提示词可用于 CogView、Flux、SDXL 等主流模型。想要更写实的表现可尝试 <a href="image-generator.html#flux">Flux Realism</a>，国漫或厚涂风格可在 <a href="tutorials.html">教程中心</a> 查看推荐参数。</p>
+        </article>
+        <article>
+          <h3>如何做 SEO / 二次创作？</h3>
+          <p>复制 Prompt 后，在描述中加入行业或学科关键词即可快速出图，再配合 <a href="blog.html">博客</a> 中的 SEO 指南，提高角色内容的搜索权重。</p>
+        </article>
+      </div>
+    </section>
+
+    </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-meta">
+        <small>© 2025 OiiOii爱好者社区（OiiOii Fan Hub） | 非官方粉丝站</small>
+        <small>本站为非官方的 OiiOii 爱好者社区，自在交流与展示 OiiOii 工具相关内容，与 OiiOii 官方无隶属关系。OiiOii 为其原公司注册商标。</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

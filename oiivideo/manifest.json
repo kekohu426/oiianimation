@@ -1,0 +1,71 @@
+{
+  "generatedAt": "2025-11-18T03:26:32.966Z",
+  "files": [
+    "系列动画1.mp4",
+    "系列动画2.mp4",
+    "case1.mp4",
+    "case2.mp4",
+    "case3.mp4",
+    "music1.mp4",
+    "music2.mp4",
+    "music3.mp4",
+    "mv1.mp4",
+    "mv2.mp4",
+    "mv3.mp4",
+    "mv4.mp4",
+    "story1.mp4",
+    "story2.mp4",
+    "story3.mp4",
+    "story4.mp4"
+  ],
+  "meta": {
+    "系列动画1.mp4": {
+      "title": "系列动画1"
+    },
+    "系列动画2.mp4": {
+      "title": "系列动画2"
+    },
+    "case1.mp4": {
+      "title": "case1"
+    },
+    "case2.mp4": {
+      "title": "case2"
+    },
+    "case3.mp4": {
+      "title": "case3"
+    },
+    "music1.mp4": {
+      "title": "music1"
+    },
+    "music2.mp4": {
+      "title": "music2"
+    },
+    "music3.mp4": {
+      "title": "music3"
+    },
+    "mv1.mp4": {
+      "title": "mv1"
+    },
+    "mv2.mp4": {
+      "title": "mv2"
+    },
+    "mv3.mp4": {
+      "title": "mv3"
+    },
+    "mv4.mp4": {
+      "title": "mv4"
+    },
+    "story1.mp4": {
+      "title": "story1"
+    },
+    "story2.mp4": {
+      "title": "story2"
+    },
+    "story3.mp4": {
+      "title": "story3"
+    },
+    "story4.mp4": {
+      "title": "story4"
+    }
+  }
+}

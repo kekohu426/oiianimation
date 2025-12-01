@@ -1,1 +1,276 @@
-<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>实用工具 | OiiOii.ai</title><meta name="description" content="提示词模板库、提示词智能生成器、角色库、风格预览器。"><link rel="canonical" href="https://oiianimation.com/tools.html"><link rel="stylesheet" href="styles.css"><script defer src="scripts.js"></script></head><body><header class="site-header"><div class="container header-inner"><a class="logo" href="/">OiiOii.ai</a><nav class="nav"><button class="nav-toggle" aria-controls="nav-list" aria-expanded="false">≡ 导航菜单</button><ul id="nav-list" class="nav-list"><li><a href="/">首页</a></li><li><a href="agents.html">核心Agent</a></li><li><a href="scenes.html">创作场景</a></li><li><a href="cases.html">案例库</a></li><li><a href="tools.html">提示词工具</a></li><li><a href="tutorials.html">教程中心</a></li><li><a class="btn btn-primary" href="beta.html">申请内测</a></li><li><a href="enterprise.html">企业合作</a></li></ul></nav></div></header><main><section class="container section"><h1>实用创作工具，降低门槛，提升效率</h1><p>提示词模板库、智能生成器、角色库与风格预览器，让动画创作更简单。</p></section></main><footer class="site-footer"><div class="container footer-inner"><div class="footer-links"><a href="privacy.html">隐私政策</a><a href="terms.html">用户协议</a><a href="tos.html">服务条款</a><a href="contact.html">联系我们</a></div><div class="footer-meta"><small>© 2024 OiiOii.ai 保留所有权利 | oiianimation.com</small><small>商务咨询：business@oiianimation.com | 技术支持：support@oiianimation.com</small></div></div></footer></body></html>
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>辅助工具 | 即将上线 | OiiOii.ai</title>
+  <meta name="description" content="提示词结构器、镜头节奏器、角色一致性清单、文案密度评估、字幕时间线生成器、缩略图生成器、风格对照表（即将上线），预约优先体验">
+  <link rel="canonical" href="https://oiianimation.com/tools.html">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">OiiOii.ai 动画创作Agent</a>
+                  <nav class="nav" aria-label="主导航">
+        <button class="nav-toggle" aria-controls="nav-list" aria-expanded="false">≡ 导航菜单</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="/">首页</a></li>
+          <li><a href="/cases.html">oiioii视频案例库 <span class="badge">Hot</span></a></li>
+          <li><a href="/styles.html">风格库</a></li>
+          <li><a href="/characters.html">角色库</a></li>
+          <li><a href="/tutorials.html">教程中心 <span class="badge">New</span></a></li>
+          <li><a href="/blog.html">博客</a></li>
+          <li><a class="active" href="/tools.html">工具库</a></li>
+          <li><a href="/contact.html">oiioii官方信息</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="tools-page">
+    <section class="tools-hero container section">
+      <div class="tools-hero__copy">
+        <p class="eyebrow">OiiOii 工具矩阵</p>
+        <h1>辅助工具实验室</h1>
+        <p class="tools-hero__lead">围绕 Prompt、分镜、角色资产与交付节奏打造的 AI 动画辅助组件，帮助你更快定位风格、控制产出质量、联动团队协作。</p>
+        <ul class="tools-hero__highlights">
+          <li>
+            <span>结构化 Prompt</span>
+            <p>标签化选择方案，自动串联人物、风格与镜头语言。</p>
+          </li>
+          <li>
+            <span>工作流守护</span>
+            <p>节奏规划、角色一致性清单等工具减少返工成本。</p>
+          </li>
+          <li>
+            <span>一键交付</span>
+            <p>字幕、缩略图、风格对照等功能把创作输出到多渠道。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container section tool-section">
+      <div class="cards tool-cards">
+        <article id="prompt-builder" class="card tool-card tool-card--prompt">
+          <header class="tool-card__header">
+            <div>
+              <p class="eyebrow">Prompt Studio</p>
+              <h3>提示词结构器</h3>
+            </div>
+            <span class="status-chip status-chip--live">体验版</span>
+          </header>
+          <p>输入场景/风格/角色/时长，自动生成规范化提示词（JSON + 可复制文本）。</p>
+          <p class="note">用途：统一团队提示词格式，减少试错。</p>
+
+          <div class="prompt-builder" aria-label="动画角色提示词快速生成器">
+            <div class="prompt-builder__column prompt-builder__column--left">
+              <div class="prompt-grid">
+                <section class="prompt-group">
+                  <p class="label">性别 × 年龄段</p>
+                  <div class="chip-list">
+                    <button type="button" class="chip" data-section="genderAge" data-token="少年">少年</button>
+                    <button type="button" class="chip" data-section="genderAge" data-token="少女">少女</button>
+                    <button type="button" class="chip" data-section="genderAge" data-token="青年男性">青年男性</button>
+                    <button type="button" class="chip" data-section="genderAge" data-token="大叔">大叔</button>
+                    <button type="button" class="chip" data-section="genderAge" data-token="御姐">御姐</button>
+                    <button type="button" class="chip" data-section="genderAge" data-token="萝莉">萝莉</button>
+                    <button type="button" class="chip" data-section="genderAge" data-token="正太">正太</button>
+                  </div>
+                </section>
+
+                <section class="prompt-group">
+                  <p class="label">性格 / 情绪特征</p>
+                  <div class="chip-list">
+                    <button type="button" class="chip" data-section="personality" data-token="傲娇">傲娇</button>
+                    <button type="button" class="chip" data-section="personality" data-token="病娇">病娇</button>
+                    <button type="button" class="chip" data-section="personality" data-token="抖S">抖S</button>
+                    <button type="button" class="chip" data-section="personality" data-token="抖M">抖M</button>
+                    <button type="button" class="chip" data-section="personality" data-token="元气">元气</button>
+                    <button type="button" class="chip" data-section="personality" data-token="天然呆">天然呆</button>
+                    <button type="button" class="chip" data-section="personality" data-token="腹黑">腹黑</button>
+                    <button type="button" class="chip" data-section="personality" data-token="温柔">温柔</button>
+                    <button type="button" class="chip" data-section="personality" data-token="电波系">电波系</button>
+                    <button type="button" class="chip" data-section="personality" data-token="酷哥">酷哥</button>
+                    <button type="button" class="chip" data-section="personality" data-token="反差萌">反差萌</button>
+                    <button type="button" class="chip" data-section="personality" data-token="黑化">黑化</button>
+                  </div>
+                </section>
+
+                <section class="prompt-group">
+                  <p class="label">外貌关键词</p>
+                  <div class="chip-list">
+                    <button type="button" class="chip" data-section="appearance" data-token="黑长直">黑长直</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="白毛">白毛</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="双马尾">双马尾</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="兽耳">兽耳</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="异色瞳">异色瞳</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="眼罩">眼罩</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="机械义肢">机械义肢</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="翅膀">翅膀</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="狐耳">狐耳</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="龙角">龙角</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="渐变发">渐变发</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="巨乳">巨乳</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="贫乳">贫乳</button>
+                    <button type="button" class="chip" data-section="appearance" data-token="绝对领域">绝对领域</button>
+                  </div>
+                </section>
+
+                <section class="prompt-group">
+                  <p class="label">服装 / 配饰风格</p>
+                  <div class="chip-list">
+                    <button type="button" class="chip" data-section="outfit" data-token="旗袍">旗袍</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="女仆装">女仆装</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="泳装">泳装</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="婚纱">婚纱</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="和服">和服</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="哥特萝莉">哥特萝莉</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="JK制服">JK制服</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="战斗装">战斗装</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="礼服">礼服</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="睡衣">睡衣</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="兔女郎">兔女郎</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="体操服">体操服</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="裸围裙">裸围裙</button>
+                    <button type="button" class="chip" data-section="outfit" data-token="破衣">破衣</button>
+                  </div>
+                </section>
+
+                <section class="prompt-group">
+                  <p class="label">身份 / 职业标签</p>
+                  <div class="chip-list">
+                    <button type="button" class="chip" data-section="identity" data-token="魔王">魔王</button>
+                    <button type="button" class="chip" data-section="identity" data-token="勇者">勇者</button>
+                    <button type="button" class="chip" data-section="identity" data-token="吸血鬼">吸血鬼</button>
+                    <button type="button" class="chip" data-section="identity" data-token="死神">死神</button>
+                    <button type="button" class="chip" data-section="identity" data-token="魔法少女">魔法少女</button>
+                    <button type="button" class="chip" data-section="identity" data-token="机器人">机器人</button>
+                    <button type="button" class="chip" data-section="identity" data-token="龙娘">龙娘</button>
+                    <button type="button" class="chip" data-section="identity" data-token="巫女">巫女</button>
+                    <button type="button" class="chip" data-section="identity" data-token="恶魔">恶魔</button>
+                    <button type="button" class="chip" data-section="identity" data-token="舰娘">舰娘</button>
+                    <button type="button" class="chip" data-section="identity" data-token="忍者">忍者</button>
+                    <button type="button" class="chip" data-section="identity" data-token="神明">神明</button>
+                    <button type="button" class="chip" data-section="identity" data-token="枪械少女">枪械少女</button>
+                    <button type="button" class="chip" data-section="identity" data-token="人造人">人造人</button>
+                  </div>
+                </section>
+
+                <section class="prompt-group">
+                  <p class="label">画风 / 流派</p>
+                  <div class="chip-list">
+                    <button type="button" class="chip" data-section="style" data-token="UFO桌质感">UFO桌</button>
+                    <button type="button" class="chip" data-section="style" data-token="拔机社风格">拔机社</button>
+                    <button type="button" class="chip" data-section="style" data-token="京都脸构图">京都脸</button>
+                    <button type="button" class="chip" data-section="style" data-token="shaft构图感">shaft</button>
+                    <button type="button" class="chip" data-section="style" data-token="韩漫风色彩">韩漫风</button>
+                    <button type="button" class="chip" data-section="style" data-token="新国风光影">新国风</button>
+                    <button type="button" class="chip" data-section="style" data-token="Netflix暗黑调">Netflix暗黑风</button>
+                    <button type="button" class="chip" data-section="style" data-token="90年代赛璐珞质感">90年代风</button>
+                    <button type="button" class="chip" data-section="style" data-token="Pixiv高质量细节">Pixiv高质量</button>
+                    <button type="button" class="chip" data-section="style" data-token="Pony狂气色调">Pony狂气</button>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+            <div class="prompt-builder__column prompt-builder__column--center">
+              <button type="button" class="btn btn-primary prompt-generate">生成提示词</button>
+              <p class="note">选择任意标签组合，点击按钮即可生成角色提示词，可直接复制到生成器。</p>
+            </div>
+
+            <div class="prompt-builder__column prompt-builder__column--right">
+              <div class="prompt-output-card">
+                <p class="label">自动生成的提示词</p>
+                <textarea class="prompt-output" rows="12" readonly placeholder="暂未选择标签，先从左侧挑选设定。"></textarea>
+                <button type="button" class="btn btn-secondary prompt-copy" aria-live="polite">复制提示词</button>
+                <small class="note prompt-status" aria-live="polite">等待生成...</small>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card tool-card">
+          <header class="tool-card__header">
+            <div>
+              <p class="eyebrow">节奏规划</p>
+              <h3>镜头节奏器</h3>
+            </div>
+            <span class="status-chip">即将上线</span>
+          </header>
+          <p>输入时长与场景，生成镜头规划（镜头数、节奏点、转场类型）。</p>
+          <p class="note">用途：快速形成分镜骨架，提高成片节奏稳定性。</p>
+        </article>
+        <article class="card tool-card">
+          <header class="tool-card__header">
+            <div>
+              <p class="eyebrow">质量守护</p>
+              <h3>角色一致性清单</h3>
+            </div>
+            <span class="status-chip">即将上线</span>
+          </header>
+          <p>上传/选择角色设定，生成一致性检查点（发型/配色/比例/关键物件）。</p>
+          <p class="note">用途：系列内容不跑偏，提升 IP 复用质量。</p>
+        </article>
+        <article class="card tool-card">
+          <header class="tool-card__header">
+            <div>
+              <p class="eyebrow">脚本助手</p>
+              <h3>文案密度评估</h3>
+            </div>
+            <span class="status-chip">即将上线</span>
+          </header>
+          <p>检测字数与句长，输出是否过密/过疏的建议与拆段提示。</p>
+          <p class="note">用途：匹配目标时长与镜头节奏，提升可看性。</p>
+        </article>
+        <article class="card tool-card">
+          <header class="tool-card__header">
+            <div>
+              <p class="eyebrow">交付助手</p>
+              <h3>字幕与时间线生成器</h3>
+            </div>
+            <span class="status-chip">即将上线</span>
+          </header>
+          <p>基于文案自动分配字幕时间段，导出 srt/vtt 供后期使用。</p>
+          <p class="note">用途：快速完成字幕制作与平台适配。</p>
+        </article>
+        <article class="card tool-card">
+          <header class="tool-card__header">
+            <div>
+              <p class="eyebrow">发布资产</p>
+              <h3>缩略图生成器</h3>
+            </div>
+            <span class="status-chip">即将上线</span>
+          </header>
+          <p>根据风格与标题生成 3–5 个封面图建议（模板 + 颜色与布局）。</p>
+          <p class="note">用途：提升点击率与品牌统一性。</p>
+        </article>
+        <article class="card tool-card">
+          <header class="tool-card__header">
+            <div>
+              <p class="eyebrow">风格管理</p>
+              <h3>风格对照表</h3>
+            </div>
+            <span class="status-chip">即将上线</span>
+          </header>
+          <p>当选择某风格时，给出相近风格与避免踩坑的替代建议。</p>
+          <p class="note">用途：更精准的风格选择与快速替换。</p>
+        </article>
+      </div>
+      
+    </section>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-meta">
+        <small>© 2025 OiiOii爱好者社区（OiiOii Fan Hub） | 非官方粉丝站</small>
+        <small>本站为非官方的 OiiOii 爱好者社区，自在交流与展示 OiiOii 工具相关内容，与 OiiOii 官方无隶属关系。OiiOii 为其原公司注册商标。</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

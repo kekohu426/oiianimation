@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图片生成 | OiiOii.ai 动画角色生成</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { deepblue: '#0b1b12', neonpurple: '#21b573', lightgray: '#f9fafb', accentorange: '#21b573' },
+          fontFamily: { sans: ['Inter','system-ui','sans-serif'], anime: ['"Noto Sans JP"','sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-lightgray">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/">OiiOii.ai 动画创作Agent</a>
+                  <nav class="nav" aria-label="主导航">
+        <button class="nav-toggle" aria-controls="nav-list" aria-expanded="false">≡ 导航菜单</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="/">首页</a></li>
+          <li><a href="/cases.html">oiioii视频案例库 <span class="badge">Hot</span></a></li>
+          <li><a href="/styles.html">风格库</a></li>
+          <li><a href="/characters.html">角色库</a></li>
+          <li><a href="/tutorials.html">教程中心 <span class="badge">New</span></a></li>
+          <li><a href="/blog.html">博客</a></li>
+          <li><a class="active" href="/tools.html">工具库</a></li>
+          <li><a href="/contact.html">oiioii官方信息</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-10">
+    <section class="max-w-5xl mx-auto">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-deepblue">一键生成角色图片</h2>
+        <p class="text-gray-700 mt-2">结合赛道与角色模板，输出可复用形象，支持参数化控制与历史版本管理</p>
+      </div>
+
+      <div class="bg-white text-gray-800 rounded-2xl shadow-xl overflow-hidden">
+        <div class="p-6 md:p-8">
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/2 space-y-6">
+              <div>
+                <h3 class="text-xl font-bold mb-3 text-deepblue">设定核心要素</h3>
+                <textarea placeholder="例如：国风水墨派+白发狐耳少女+手持油纸伞+性格清冷" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neonpurple focus:border-transparent h-32 resize-none"></textarea>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  <span class="px-2 py-1 bg-gray-100 rounded text-sm cursor-pointer hover:bg-gray-200">赛道</span>
+                  <span class="px-2 py-1 bg-gray-100 rounded text-sm cursor-pointer hover:bg-gray-200">特征</span>
+                  <span class="px-2 py-1 bg-gray-100 rounded text-sm cursor-pointer hover:bg-gray-200">性格</span>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-bold mb-3 text-deepblue">风格与细节</h3>
+                <div class="space-y-4">
+                  <div>
+                    <label class="block text-sm font-medium mb-1">角色赛道</label>
+                    <select class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neonpurple">
+                      <option>昭和复古派</option>
+                      <option>热血少年派</option>
+                      <option>治愈系角色</option>
+                      <option>暗黑奇幻派</option>
+                      <option>国风水墨派</option>
+                      <option>赛博朋克派</option>
+                      <option>职场专业派</option>
+                      <option>Q版萌系派</option>
+                      <option>反派魅力派</option>
+                      <option>异世界冒险派</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label class="block text-sm font-medium mb-1">头身比</label>
+                    <input type="range" min="1" max="8" value="3" class="w-full accent-neonpurple">
+                    <div class="flex justify-between text-xs text-gray-500">
+                      <span>Q版</span>
+                      <span>写实</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="block text-sm font-medium mb-1">线条硬度</label>
+                    <input type="range" min="0" max="100" value="50" class="w-full accent-neonpurple">
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button class="w-full bg-accentorange hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-[1.02]">
+                  <i class="fa fa-magic mr-2"></i>生成图片
+                </button>
+              </div>
+            </div>
+
+            <div class="md:w-1/2">
+              <h3 class="text-xl font-bold mb-3 text-deepblue">生成预览</h3>
+              <div class="bg-gray-100 rounded-xl h-80 flex items-center justify-center mb-4">
+                <div class="text-center">
+                  <i class="fa fa-image text-5xl text-gray-300 mb-2"></i>
+                  <p class="text-gray-500">生成的图片将显示在这里</p>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="font-medium mb-2 text-deepblue">历史版本</h4>
+                <div class="flex gap-2">
+                  <div class="w-20 h-20 bg-gray-200 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80"></div>
+                  <div class="w-20 h-20 bg-gray-200 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80"></div>
+                  <div class="w-20 h-20 bg-gray-200 rounded-lg flex-shrink-0 cursor-pointer hover:opacity-80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-meta">
+        <small>© 2025 OiiOii爱好者社区（OiiOii Fan Hub） | 非官方粉丝站</small>
+        <small>本站为非官方的 OiiOii 爱好者社区，自在交流与展示 OiiOii 工具相关内容，与 OiiOii 官方无隶属关系。OiiOii 为其原公司注册商标。</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+{
+  "generatedAt": "2025-11-18T03:26:32.975Z",
+  "files": [
+    "3D Chibi.png",
+    "Aether-Toned Lineart.png",
+    "Americana Vintage.png",
+    "Art Nouveau Line.png",
+    "Atmospheric Glaze.png",
+    "Cel Shading.png",
+    "Chroma Etch.png",
+    "Chroma Glow.png",
+    "Chroma-Grit Sketch.png",
+    "City Pop.png",
+    "Clay Toy.png",
+    "Constructivism Poster.png",
+    "Cozy Watercolor.png",
+    "Cutout Animation.png",
+    "Cyberpunk Anime.png",
+    "Dragon Ball.png",
+    "Ethereal Gothic.png",
+    "Ethereal Hyper-realism.png",
+    "Ethereal Resolution.png",
+    "Expressionist Sketch.png",
+    "Family Guy.png",
+    "Focal-Light Render.png",
+    "Game Boy.png",
+    "Ghibli Style.png",
+    "Graphic Gag Ink.png",
+    "High-Detail Cartoon.png",
+    "Honkai Star Rail.png",
+    "Isometric Pixel Art.png",
+    "Lo-fi Chibi.png",
+    "Luminous Bloom.png",
+    "Minecraft.png",
+    "Modern Animation.png",
+    "Modern Anime Pop.png",
+    "Naruto Series.png",
+    "Neo-Renaissance.png",
+    "Rotoscoped Animation.png",
+    "Sand Animation.png",
+    "Soft Chibi.png",
+    "Soft-Focus Lumina.png",
+    "Surreal Cartoon.png",
+    "Vaporwave.png",
+    "Visual Novel .png",
+    "Vitreous Render.png"
+  ],
+  "meta": {
+    "3D Chibi.png": {
+      "title": "3D Chibi"
+    },
+    "Aether-Toned Lineart.png": {
+      "title": "Aether Toned Lineart"
+    },
+    "Atmospheric Glaze.png": {
+      "title": "Atmospheric Glaze"
+    },
+    "Chroma Etch.png": {
+      "title": "Chroma Etch"
+    },
+    "Chroma Glow.png": {
+      "title": "Chroma Glow"
+    },
+    "Chroma-Grit Sketch.png": {
+      "title": "Chroma-Grit Sketch",
+      "description": "颗粒质感与速写线条，即兴氛围强，适合草图与概念探索的自由视觉。",
+      "keywords": "颗粒速写,即兴,手绘,质感噪点",
+      "prompt": "A gritty neon sketchbook spread filled with fast scribbled strokes, chalk dust, and rough marker trails glowing against a dark background."
+    },
+    "City Pop.png": {
+      "title": "City Pop"
+    },
+    "Clay Toy.png": {
+      "title": "Clay Toy"
+    },
+    "Cozy Watercolor.png": {
+      "title": "Cozy Watercolor"
+    },
+    "Dragon Ball.png": {
+      "title": "Dragon Ball"
+    },
+    "Ethereal Gothic.png": {
+      "title": "Ethereal Gothic"
+    },
+    "Ethereal Hyper-realism.png": {
+      "title": "Ethereal Hyper realism"
+    },
+    "Ethereal Resolution.png": {
+      "title": "Ethereal Resolution"
+    },
+    "Family Guy.png": {
+      "title": "Family Guy"
+    },
+    "Focal-Light Render.png": {
+      "title": "Focal Light Render"
+    },
+    "Game Boy.png": {
+      "title": "Game Boy"
+    },
+    "Ghibli Style.png": {
+      "title": "Ghibli Style"
+    },
+    "Graphic Gag Ink.png": {
+      "title": "Graphic Gag Ink"
+    },
+    "High-Detail Cartoon.png": {
+      "title": "High Detail Cartoon"
+    },
+    "Honkai Star Rail.png": {
+      "title": "Honkai Star Rail"
+    },
+    "Lo-fi Chibi.png": {
+      "title": "Lo-fi Chibi",
+      "description": "低保真颗粒感与柔和色调，Chill 气质的 Q 版角色搭配复古滤镜。",
+      "keywords": "低保真,颗粒感,治愈,Chill,柔和色调",
+      "prompt": "A small chibi character listening to music on a rainy night with VHS grain and soft lo-fi colors."
+    },
+    "Luminous Bloom.png": {
+      "title": "Luminous Bloom",
+      "description": "柔光与高光溢出营造梦幻纯净的 Bloom 特效，强调圣洁氛围。",
+      "keywords": "柔光,高光溢出,梦幻,纯净,Bloom特效",
+      "prompt": "An ethereal angel portrait with extreme soft focus and strong lens bloom glow, luminous bloom style."
+    },
+    "Minecraft.png": {
+      "title": "Minecraft"
+    },
+    "Modern Animation.png": {
+      "title": "Modern Animation"
+    },
+    "Modern Anime Pop.png": {
+      "title": "Modern Anime Pop"
+    },
+    "Naruto Series.png": {
+      "title": "Naruto Series"
+    },
+    "Neo-Renaissance.png": {
+      "title": "Neo Renaissance"
+    },
+    "Soft Chibi.png": {
+      "title": "Soft Chibi"
+    },
+    "Soft-Focus Lumina.png": {
+      "title": "Soft Focus Lumina"
+    },
+    "Vaporwave.png": {
+      "title": "Vaporwave"
+    },
+    "Visual Novel .png": {
+      "title": "Visual Novel",
+      "description": "高分辨率赛璐珞上色、角色细腻，背景强调氛围光效与饱和色彩，常配合对话框布局。",
+      "keywords": "赛璐珞,氛围光,静态特写,高分辨率,日系CG",
+      "prompt": "A female character with detailed anime eyes and hair, standing in a dimly lit classroom, high-resolution cel shading, visual novel game CG."
+    },
+    "Vitreous Render.png": {
+      "title": "Vitreous Render"
+    },
+    "Rotoscoped Animation.png": {
+      "title": "Rotoscoped Animation",
+      "description": "根据真人拍摄路径逐帧描摹，线条清晰且动作真实流畅，保留独特运动轨迹。",
+      "keywords": "真实动作,流畅线条,描绘轮廓,运动写实,黑边描绘",
+      "prompt": "A figure dancing dynamically in a spotlight, traced and animated from real footage, fluid motion, strong black outlines, rotoscoping style."
+    },
+    "Cutout Animation.png": {
+      "title": "Cutout Animation",
+      "description": "剪纸/卡纸材质与平面拼贴质感，粗糙边缘与块状元素，二维层次运动。",
+      "keywords": "剪纸,卡纸,平面拼贴,二维运动,粗糙边缘",
+      "prompt": "A large monster made of multicolored cardboard chasing a smaller character, visible paper edges, cutout animation style."
+    },
+    "Sand Animation.png": {
+      "title": "Sand Animation",
+      "description": "背光板上的沙子颗粒与即兴流动，画面持续变形，呈现流沙墨迹效果。",
+      "keywords": "沙子颗粒,流动,即兴,背光,艺术表演",
+      "prompt": "The silhouette of a ship morphing into a bird on a light table with fine sand, granular texture, sand animation art."
+    },
+    "Expressionist Sketch.png": {
+      "title": "Expressionist Sketch",
+      "description": "夸张形体与粗犷笔触，扭曲透视及非自然色彩，强调强烈情绪。",
+      "keywords": "夸张形体,粗犷笔触,非自然色彩,强烈情感,速写",
+      "prompt": "A figure screaming with violently distorted perspective, thick aggressive lines, unsettling color palette, expressionist sketch style."
+    },
+    "Surreal Cartoon.png": {
+      "title": "Surreal Cartoon",
+      "description": "梦境般的逻辑颠倒与达利式变形，幽默抽象的卡通组合带来强烈冲击。",
+      "keywords": "逻辑颠倒,梦境,奇特组合,抽象,达利式变形",
+      "prompt": "A melting clock draped over a floating geometric building under a bizarre dreamy sky, humorous distortion, surreal cartoon style."
+    },
+    "Art Nouveau Line.png": {
+      "title": "Art Nouveau Line",
+      "description": "新艺术运动的装饰性线条与优雅曲线，平面化柔和色彩搭配藤蔓图案。",
+      "keywords": "装饰性线条,曲线优雅,平面化,复古优雅",
+      "prompt": "A woman with flowing hair framed by intricate decorative plant motifs and stylized curves, elegant Art Nouveau illustration style."
+    },
+    "Constructivism Poster.png": {
+      "title": "Constructivism Poster",
+      "description": "几何结构与强烈斜线构图，红黑白工业美学营造宣传海报力量感。",
+      "keywords": "几何图形,强斜线,红黑白,工业美学,结构力量",
+      "prompt": "An industrial worker formed by hard geometric shapes and sharp diagonal lines in red, black and white, constructivist poster design."
+    },
+    "Cel Shading.png": {
+      "title": "Cel Shading",
+      "description": "3D 模型使用平坦硬朗阴影分层，线条清晰，让画面像 2D 赛璐珞动画。",
+      "keywords": "3D卡通,硬阴影,赛璐珞光影,清晰线条",
+      "prompt": "A detailed 3D robot warrior rendered with hard flat blocks of shadow and sharp outlines, cel shading render."
+    },
+    "Isometric Pixel Art.png": {
+      "title": "Isometric Pixel Art",
+      "description": "等距 45° 像素视角呈现立体空间，适合城市/建筑全景展示。",
+      "keywords": "等距视角,像素化,45度角,立体空间",
+      "prompt": "A cozy cafe scene in perfect 45-degree isometric pixel art showing the full interior layout."
+    },
+    "Cyberpunk Anime.png": {
+      "title": "Cyberpunk Anime",
+      "description": "霓虹蓝紫红配色、湿润街道与强阴影，构成高科技低生活的夜景氛围。",
+      "keywords": "霓虹,高对比,湿润街道,强阴影,未来",
+      "prompt": "A lone figure on a neon-drenched futuristic street, high contrast blues and magentas with rain reflections, cyberpunk anime."
+    },
+    "Americana Vintage.png": {
+      "title": "Americana Vintage",
+      "description": "30 年代橡胶软管风格，低饱和或黑白画面配夸张喜剧动作与胶片颗粒。",
+      "keywords": "橡胶软管,黑白,30s动画,夸张动作,复古美式",
+      "prompt": "A cartoon with rubber hose limbs and pie-cut eyes in a grainy black-and-white scene, 1930s Americana cartoon style."
+    }
+  }
+}
