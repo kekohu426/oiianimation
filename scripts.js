@@ -1,3 +1,12 @@
+// Vercel Web Analytics - Track page views and performance
+(function() {
+  const script = document.createElement('script');
+  script.src = '/_vercel/insights/script.js';
+  script.async = true;
+  script.defer = true;
+  document.head.appendChild(script);
+})();
+
 const SITE_NAME_CN='OiiOii爱好者社区';
 const SITE_NAME_EN='OiiOii Fan Hub';
 const SITE_NAME_FULL=`${SITE_NAME_CN} · ${SITE_NAME_EN}`;
